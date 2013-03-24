@@ -10,6 +10,7 @@ execute pathogen#infect()
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 source ~/.vim/mappings.vim
+source ~/.vim/nerd.vim
 
 " kj will exit insert mode quickly
 inoremap kj <Esc>
@@ -18,7 +19,6 @@ set wildmenu
 set wildmode=full
 
 set history=200
-
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 nnoremap & :&&<Enter>
@@ -34,7 +34,6 @@ function! s:VSetSearch()
   let @s = temp
 endfunction
 
-nnoremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
 
 " Search Dash for word under cursor
 function! SearchDash()

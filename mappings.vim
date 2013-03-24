@@ -9,6 +9,9 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gp :Git push<CR>
 
+map <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+
+
 " Toggle paste mode
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
@@ -55,6 +58,7 @@ map <Up> gk
 
 " Toggle hlsearch with <leader>hs
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
+nnoremap <silent> <C-l> : <C-u> nohlsearch <CR><C-l>
 
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
