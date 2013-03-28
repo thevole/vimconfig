@@ -5,6 +5,7 @@ source ~/.vim/settings.vim
 source ~/.vim/statusline.vim
 
 execute pathogen#infect()
+Helptags
 
 " Fugitive status line
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
