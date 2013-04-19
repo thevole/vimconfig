@@ -4,8 +4,10 @@ set guioptions-=r " Removes right hand scroll bar
 set guioptions-=L " Removes left hand scroll bar
 
 colorscheme macvim
-"colorscheme vibrantink
-"colorscheme wombat256
+" colorscheme vibrantink
+" colorscheme wombat256
+" colorscheme grb256
+" colorscheme jellybeans
 
 if has("gui_running")
   if has("autocmd")
