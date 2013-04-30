@@ -48,6 +48,7 @@ endfunction
 map <leader>d :call SearchDash()<CR>
 
 source $VIMRUNTIME/macros/matchit.vim
+source ~/.vim/testing.vim
 
 nmap <buffer> <F9> <Plug>(xmpfilter-run)
 xmap <buffer> <F9> <Plug>(xmpfilter-run)
